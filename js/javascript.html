@@ -1,1 +1,46 @@
-
+<script>
+		function insert(num){
+			document.form.textview.value=document.form.textview.value+num;
+		}
+		
+		function clean(){ //clear button
+			document.form.textview.value= "";
+		}
+		
+		function equals(){
+			var eq = document.form.textview.value;
+			
+			if (eq){
+			document.form.textview.value=eval(eq);
+			}
+		}
+		
+		function back(){
+			var b=document.form.textview.value;
+				document.form.textview.value=b.substring(0, b.length -1);
+		}
+		
+		function sin(){
+			document.form.textview.value= Math.tan(document.form.textview.value);
+		}
+		
+		function cos(){
+			document.form.textview.value= Math.tan(document.form.textview.value);
+		}
+		
+		function tan(){ 
+			document.form.textview.value= Math.tan(document.form.textview.value);
+		}
+		
+		function square(){ //squared button
+			document.form.textview.value= Math.pow(document.form.textview.value, 2);
+		}
+		
+		function sqrt2(){ //taking the square root
+			document.form.textview.value= Math.pow(document.form.textview.value, 1/2);
+		}
+		
+		function number(value){ 
+			document.form.textview.value += value;
+		}
+		</script>
